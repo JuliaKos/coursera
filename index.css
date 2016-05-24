@@ -1,0 +1,130 @@
+body{
+	background-color: rgba(64, 57, 65, 0.52);
+	font-family: 'PT Serif', serif;
+}
+
+h1{
+	text-align: center;
+	color: #FFEB3B;
+	width: 100%;
+	height: auto;
+}
+
+
+section{
+	width: 31%;
+	float: left;
+	border: 1px solid #000000;
+	margin-top: 15px;
+	margin-right: 1%;
+	margin-left: 1%;
+	background-color: rgba(83, 220, 244, 0.31);
+	display: block;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	overflow: auto; 
+	font-size: 20px;
+
+
+
+}
+
+
+
+p{
+	padding:5px 20px 5px 10px;
+	margin-top: 40px;
+}
+
+
+.Chicken{
+    background-color: #F0A6F0;
+}
+
+.Beef{
+	background-color: #EE6268;
+}
+
+.Sushi{
+	    background-color: #C2FADB;
+}
+
+#col-1 #col-2 #col-3{
+	margin-right: 1%;
+}
+
+
+h2{
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+	border-left: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	font-size: 15px;
+	float: right;
+    margin: initial;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+}
+/********desktop view *********/
+@media screen and (min-width: 992px) {
+	
+	section{
+		
+		margin-right: auto;
+		margin-left: auto;
+		width: 30%;	
+	}
+
+#col-1{
+	    float: left;
+	    width:30%;
+}
+
+#col-2{
+	    float: center;
+	    width:30%;
+	} 
+	#col-3{
+	    float: right;
+		width:30%;
+	}
+	}
+
+/**********tablet view***********/
+@media (min-width: 768px) and (max-width: 991px){
+    #col-1{
+	    width:47.5%;
+
+}
+    #col-2{
+        width:47.5%;
+        float: right;
+    }
+
+	#col-3{
+		width:98%;
+}
+}
+
+/*mobile view*/
+@media screen and (max-width: 767px){
+	section{
+		width:100%;
+		margin-right: 3%;
+		clear:both;
+	}
+}
+
+
+.container{
+	/*text-align: center;*/
+	display: inline-block;
+	margin-right:2%;
+	margin-left:2%;
+}
